@@ -9,7 +9,7 @@ try:
 except EOFError:
     pass
 
-lines = [lines[i]+r"\\"+"\n" for i in range(len(lines))]
+lines = [lines[i]+r"\\"+"\n" for i in range(len(lines)-1)]
 columns = len(lines[0].split("\t"))
 lines = [x.replace("\t", "  &&  ") for x in lines]
 lines = ["\t"+lines[i] for i in range(len(lines))]
@@ -25,6 +25,6 @@ r'''\begin{table}[H]
 	\centering
 	\begin{tabular}{'''+placement+r'''}
 '''+"".join(lines)+r'''	\end{tabular}
-	\caption{Caption_here}
+	\caption{Caption_here}\label{label_me}
 \end{table}
 \medskip''')
