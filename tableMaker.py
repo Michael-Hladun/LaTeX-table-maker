@@ -1,4 +1,4 @@
-# program to read in spreadsheet values copied to text file and create LaTeX table
+# reads in spreadsheet values copied to terminal and creates LaTeX table
 
 print("Please copy and paste your spreadsheet data. Hit enter, ctrl-D when done.\n")
 
