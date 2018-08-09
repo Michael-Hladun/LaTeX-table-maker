@@ -15,7 +15,7 @@ lines = [x.replace("\t", "  &&  ") for x in lines]
 lines = ["\t"+lines[i] for i in range(len(lines))]
 
 placement = [columns]
-placement = ["c" for x in range(columns)]
+placement = ["c" for x in range(columns+5)]
 placement = " ".join(placement)
 
 print("Here is your table:\n")
