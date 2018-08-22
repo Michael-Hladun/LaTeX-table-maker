@@ -11,11 +11,11 @@ except EOFError:
 
 lines = [lines[i]+r"\\"+"\n" for i in range(len(lines)-1)]
 columns = len(lines[0].split("\t"))
-lines = [x.replace("\t", "  &&  ") for x in lines]
+lines = [x.replace("\t", "  &  ") for x in lines]
 lines = ["\t"+lines[i] for i in range(len(lines))]
 
 placement = [columns]
-placement = ["c" for x in range(columns+5)]
+placement = ["c" for x in range(columns)]
 placement = " ".join(placement)
 
 print("Here is your table:\n")
