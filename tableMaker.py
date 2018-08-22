@@ -25,6 +25,6 @@ r'''\begin{table}[H]
 	\centering
 	\begin{tabular}{'''+placement+r'''}
 '''+"".join(lines)+r'''	\end{tabular}
-	\caption{Caption_here}\label{label_me}
+	\caption{CaptionHere}\label{LabelMe}
 \end{table}
 \medskip''')
